@@ -1,0 +1,20 @@
+{
+  "name": "mqtt-queue",
+  "version": "1.0.0",
+  "description": "Queueing messages from mqtt",
+  "main": "src/index.js",
+  "repository": "git@github-personal:Eklavya-San/mqtt-queue.git",
+  "author": "Eklavya-MachineWise <eklavya.g@wathare.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "joi": "^18.0.1",
+    "mqtt": "^5.14.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  },
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  }
+}
