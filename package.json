@@ -8,8 +8,10 @@
   "license": "MIT",
   "private": false,
   "dependencies": {
+    "dotenv": "^17.2.2",
     "joi": "^18.0.1",
-    "mqtt": "^5.14.1"
+    "mqtt": "^5.14.1",
+    "winston": "^3.17.0"
   },
   "devDependencies": {
     "nodemon": "^3.1.10"

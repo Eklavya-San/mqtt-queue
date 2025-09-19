@@ -1,6 +1,7 @@
 const dotenv = require("dotenv");
 const Joi = require("joi");
 const fs = require("fs");
+const path = require("path");
 
 const loadEnv = () => {
   const envPaths = [
@@ -26,6 +27,7 @@ const envVarsSchema = Joi.object()
       .required(),
     MQTT_HOST: Joi.string().description("Mqtt broker ip").required(),
     MQTT_PORT: Joi.string().description("Mqtt broker port").required(),
+    MQTT_TOPICS: Joi.string().description("Mqtt broker topics").required(),
   })
   .unknown();
 
@@ -38,5 +40,7 @@ if (error) {
 }
 
 module.exports = {
-  mqtt: { host: envVars.MQTT_HOST, port: envVars.MQTT_PORT },
+  mqttHost: envVars.MQTT_HOST,
+  mqttPort: envVars.MQTT_PORT,
+  mqttTopics: envVars.MQTT_TOPICS,
 };
