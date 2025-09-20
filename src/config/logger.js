@@ -1,4 +1,6 @@
 const winston = require("winston");
+const { nodeEnv } = require("./config");
+console.log("nodeEnv", nodeEnv);
 
 const enumerateErrorFormat = winston.format((info) => {
   if (info instanceof Error) {
@@ -8,7 +10,7 @@ const enumerateErrorFormat = winston.format((info) => {
 });
 
 const logger = winston.createLogger({
-  level: process.env.NODE_ENV === "production" ? "info" : "debug",
+  level: nodeEnv === "production" ? "info" : "debug",
   format: winston.format.combine(
     enumerateErrorFormat(),
     winston.format.colorize(),

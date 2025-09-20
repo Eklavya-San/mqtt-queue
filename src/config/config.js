@@ -43,4 +43,5 @@ module.exports = {
   mqttHost: envVars.MQTT_HOST,
   mqttPort: envVars.MQTT_PORT,
   mqttTopics: envVars.MQTT_TOPICS,
+  nodeEnv: envVars.NODE_ENV,
 };
