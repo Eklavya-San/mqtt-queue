@@ -8,15 +8,18 @@
   "license": "MIT",
   "private": false,
   "dependencies": {
-    "dotenv": "^17.2.2",
-    "joi": "^18.0.1",
-    "mqtt": "^5.14.1",
-    "winston": "^3.17.0"
+    "dayjs": "1.11.18",
+    "dotenv": "17.2.2",
+    "joi": "18.0.1",
+    "mqtt": "5.14.1",
+    "node-notifier": "10.0.1",
+    "winston": "3.17.0"
   },
   "devDependencies": {
     "nodemon": "^3.1.10"
   },
   "scripts": {
-    "dev": "nodemon src/index.js"
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js"
   }
 }
