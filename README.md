@@ -11,7 +11,7 @@ Built with:
 
 ---
 
-## 🗂️ Project Structure
+## Project Structure
 
 ```
 mqtt-queue/
@@ -33,14 +33,14 @@ mqtt-queue/
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### 1. Clone & Install
 
 ```bash
-git clone <your-repo-url>
+git clone git@github.com:Eklavya-San/mqtt-queue.git
 cd mqtt-queue
-pnpm install  # or pnpm install / yarn
+pnpm install  # pnpm install
 ```
 
 ### 2. Configure Environment
@@ -60,7 +60,7 @@ MQTT_TOPICS=hall_light,bedroom_light
 NODE_ENV=development
 ```
 
-> 💡 You can use public brokers like `broker.emqx.io` or `test.mosquitto.org` for testing.
+> You can use public brokers like `broker.emqx.io` or `test.mosquitto.org` for testing.
 
 ### 3. Start the Listener
 
@@ -71,8 +71,8 @@ pnpm run dev
 You’ll see logs like:
 
 ```
-💡 hall_light is now: true
-💡 bedroom_light is now: false
+ hall_light is now: true
+ bedroom_light is now: false
 ```
 
 ### 4. (Optional) Start the Simulator
@@ -87,7 +87,7 @@ It will publish alternating `true`/`false` to your topics every 5 seconds.
 
 ---
 
-## 🧩 Features
+## Features
 
 - **Singleton MQTT Client**: Reusable, reconnects automatically.
 - **Buffer Handling**: Correctly parses MQTT payloads to JSON booleans.
@@ -97,15 +97,15 @@ It will publish alternating `true`/`false` to your topics every 5 seconds.
 
 ---
 
-## 🛠️ Environment Variables copy from sample `.env.example`
+## Environment Variables copy from sample `.env.example`
 
 ---
 
-## 🧪 Testing with Public Tools
+## Testing with Public Tools
 
 Subscribe live using [MQTT Explorer](https://mqtt-explorer.com/) or online client:
 
-🔗 https://www.emqx.com/en/mqtt-client
+https://www.emqx.com/en/mqtt-client
 
 Subscribe to your topic (e.g., `hall_light`) to see messages in real-time.
 
